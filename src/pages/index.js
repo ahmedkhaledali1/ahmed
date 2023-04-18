@@ -47,7 +47,7 @@ export default function Home() {
                   hover:border-dark dark:border-light
                    dark:p-4
                    "
-                  href="/dummy.pdf"
+                  href="/AltaCV___NicolasOmar_Fork.pdf"
                   target={'_blank'}
                   download={true}
                 >
