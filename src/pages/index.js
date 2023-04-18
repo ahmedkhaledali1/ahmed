@@ -1,7 +1,7 @@
 import Layout from '@/components/Layout';
 import Head from 'next/head';
 import Image from 'next/image';
-import profilePic from '../../public/images/profile/ak.jpg';
+import profilePic from '../../public/images/profile/IMG_20221021_220314_501.jpg';
 import AnimatedText from '@/components/AnimatedText';
 import Link from 'next/link';
 import { LinkArrow } from '@/components/Icons';
