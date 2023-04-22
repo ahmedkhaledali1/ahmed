@@ -93,7 +93,7 @@ const about = () => {
             <div className="w-[75%] mx-auto mt-16 text-start text-3xl sm:!text-xl">
               -Like you see in projects I&apos;m using
               <span className="font-semibold text-emerald-500">Reactjs</span>
-              and athoures{' '}
+              and
               <span className="font-semibold text-emerald-500">Nextjs</span>
             </div>
 
