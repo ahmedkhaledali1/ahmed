@@ -120,7 +120,7 @@ const projects = () => {
 . You can easily convert the price in your 
 local currency.
                 "
-              link="https://e-commerce-ak-shop.vercel.app/"
+              link="https://e-commerce-eosin-tau.vercel.app/"
               type="big Project"
               github="https://github.com/ahmedkhaledali1/e-commerce"
             />
