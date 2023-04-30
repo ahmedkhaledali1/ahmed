@@ -1,7 +1,7 @@
 import Layout from '@/components/Layout';
 import Head from 'next/head';
 import Image from 'next/image';
-import profilePic from '../../public/images/profile/IMG_20221021_220314_501.jpg';
+import profilePic from '../../public/images/profile/IMG_20230215_032956_499.jpg';
 import AnimatedText from '@/components/AnimatedText';
 import Link from 'next/link';
 import { LinkArrow } from '@/components/Icons';
@@ -16,20 +16,26 @@ export default function Home() {
       </Head>
       <main className="flex items-center text-dark w-full h-min dark:bg-dark dark:text-light pt-0">
         <Layout className="pt-0 md:pt-16 sm:pt-8">
-          <div className=" flex items-center justify-between w-full lg:flex-col">
-            <div className="w-1/2 md:w-full flex justify-start mr-10 items-center ">
+          <div className="  w-full flex items-center justify-center text-center lg:flex-col">
+            <div className="w-1/2 md:w-full flex justify-start  items-center rounded-full ">
               <Image
                 src={profilePic}
                 alt="Ahmed"
-                className="w-full h-auto  md:inline-block md:mb-8 md:w-full rounded-3xl "
+                className=" rounded-full  md:inline-block md:mb-8 md:w-full "
                 priority
-                sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw, 50vw"
+                // width={90}
+                // height={90}
+                // sizes="(max-width: 8px) 100vw,
+                // (max-width: 600px) 20vw, 20vw"
               />
             </div>
-            <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center ">
+            <div className="w-1/2 flex flex-col items-center justify-center text-center self-center lg:w-full lg:text-center ">
               <AnimatedText
-                text="Turning Vision Into Reality With Code And Design. "
+                text="Ahmed Khaled"
+                className="!text-6xl xl:text-5xl lg:!text-center md:text-5xl sm:!text-3xl"
+              />
+              <AnimatedText
+                text="Front end developer"
                 className="!text-6xl xl:text-5xl lg:!text-center md:text-5xl sm:!text-3xl"
               />
               <p className="my-4 text-base font-medium">

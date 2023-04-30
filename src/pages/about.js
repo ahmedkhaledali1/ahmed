@@ -25,25 +25,21 @@ const about = () => {
                 Biography
               </h2>
               <p className=" text-xl w-full">
-                - Hi, I&apos;m Ahmed Khaled, a reactjs and nextjs developer and
-                I use Javascript and typescript for programming with a passion
-                for creating beautiful, functional, and user-centered digital
-                experiences. With one year of experience in the field. I am
-                always looking for new and innovative ways to bring my
-                clients&apos; visions to life.
+                - Hi, I&apos;m Ahmed Khaled, Junior Front-end developer with one
+                year of implement projects with Reactjs. specializes in Nextjs
+                thrives at creating responsive designs and real projects with
+                modern Technologies like nextjs, typescript, tailwindcss,
+                mongoDB, prisma and others..
               </p>
               <p className=" text-xl font-medium my-4 w-full">
-                - I believe that design is about more than just making things
-                look pretty – it&apos;s about solving problems and creating
-                intuitive, enjoyable experiences for users.
+                -I’m an out-of-the-box thinker and capable of finding a solution
+                for the non-typical task. my dream that I will be great
+                Programmer and I Upgradable every-time
               </p>
-
               <p className=" text-xl font-medium my-4 w-full">
-                - Whether I&apos;m working on a website,or other digital
-                product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
+                - I believe that development is about more than just making
+                things look pretty – it&apos;s about solving problems and
+                creating intuitive, enjoyable experiences for users.
               </p>
             </div>
 
@@ -64,7 +60,7 @@ const about = () => {
             <div
               className="col-span-2 xl:text-4xl xl:order-3 xl:col-span-8 lg:col-span-8 md:col-span-8
              xl:flex-row xl:justify-center xl:items-center flex flex-col 
-            gap-6 items-center xl:flex  md:order-3 "
+            gap-6 md:gap-0 items-center xl:flex  md:order-3 "
             >
               <div>
                 <p className="xl:font-bold md:text-xl">
@@ -82,42 +78,13 @@ const about = () => {
               <div>
                 <p className="xl:font-bold md:text-xl">Education</p>
                 <p className="text-center md:text-xl text-xl">
-                  I&apos;m a student in the fourth year in computer engineering
-                  menufya-university
+                  I&apos;m a student in computer engineering menufya-university
                 </p>
               </div>
             </div>
           </div>
           <Skills />
-          <div className="mt-44 mb-20 md:mt-32 sm:!mt-24">
-            <div className="w-[75%] mx-auto mt-16 text-start text-3xl sm:!text-xl">
-              -Like you see in projects I&apos;m using
-              <span className="font-semibold text-emerald-500">Reactjs</span>
-              and
-              <span className="font-semibold text-emerald-500">Nextjs</span>
-            </div>
-
-            <div className="w-[75%] mx-auto mt-2 text-start text-3xl sm:!text-xl">
-              -but you didn&apos;t see, I use more one state manegement in All
-              projects like{' '}
-              <span className="font-semibold text-emerald-500">
-                redux, zustand and context
-              </span>
-              . I use{' '}
-              <span className="font-semibold text-emerald-500">typescript</span>
-              for static types.I use{' '}
-              <span className="font-semibold text-emerald-500">Tailwind</span>
-              css for dynamic styles. I use a strong database as
-              <span className="font-semibold text-emerald-500">
-                MongoDB and firebase
-              </span>
-              too, I use
-              <span className="font-semibold text-emerald-500">
-                framer-motion
-              </span>
-              for animation style
-            </div>
-          </div>
+          <div className="mt-44 mb-20 md:mt-32 sm:!mt-24"></div>
           <Education />
         </Layout>
       </main>

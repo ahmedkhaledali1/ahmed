@@ -15,7 +15,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
     <article
       className="w-full md:flex-col  flex items-center justify-between 
     rounded-3xl border border-solid border-dark bg-light
-    shadow-2xl p-12 md:p-8 2xl:p-8 dark:bg-dark dark:border-light"
+    shadow-2xl p-12 !md:p-2 md:px-1 2xl:p-8 dark:bg-dark dark:border-light"
     >
       <Link
         href={link}
@@ -60,7 +60,7 @@ const Project = ({ type, title, summary, img, link, github }) => {
     <article
       className="w-full flex flex-col  items-center justify-between 
       rounded-3xl border border-solid border-dark bg-light 
-      shadow-2xl p-6 relative mt-8 dark:bg-dark dark:border-light"
+      shadow-2xl p-6 !md:p-2 relative mt-8 dark:bg-dark dark:border-light"
     >
       <Link
         href={link}
