@@ -32,11 +32,11 @@ export default function Home() {
             <div className="w-1/2 flex flex-col items-center justify-center text-center self-center lg:w-full lg:text-center ">
               <AnimatedText
                 text="Ahmed Khaled"
-                className="!text-6xl xl:text-5xl lg:!text-center md:text-5xl sm:!text-3xl"
+                className="!text-6xl xl:text-5xl !text-center md:text-5xl sm:!text-3xl"
               />
               <AnimatedText
                 text="Front end developer"
-                className="!text-6xl xl:text-5xl lg:!text-center md:text-5xl sm:!text-3xl"
+                className="!text-5xl xl:text-5xl self-center !text-center md:text-5xl sm:!text-3xl"
               />
               <p className="my-4 text-base font-medium">
                 As a skilled front-end developer, I am dedicated to turning
