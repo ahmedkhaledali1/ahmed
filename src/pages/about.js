@@ -77,7 +77,7 @@ const about = () => {
               </div>
               <div>
                 <p className="xl:font-bold md:text-xl">Education</p>
-                <p className="text-center md:text-xl text-xl">
+                <p className="text-center md:text-xl font-serif text-xl">
                   I&apos;m a student in computer engineering menufya-university
                 </p>
               </div>
