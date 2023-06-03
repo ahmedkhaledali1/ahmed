@@ -1,6 +1,5 @@
 import AnimatedText from '@/components/AnimatedText';
 import { GithubIcon } from '@/components/Icons';
-import Layout from '@/components/Layout';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -8,7 +7,7 @@ import React from 'react';
 import ecommerce from '../../public/images/projects/ecommerce-cover-image.jpg';
 import cart from '../../public/images/projects/cart.jpg';
 import twitter from '../../public/images/projects/twitter.jpg';
-import portfolio from '../../public/images/projects/portfolio2.png';
+import worker from '../../public/images/projects/worker.png';
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
@@ -127,14 +126,13 @@ local currency.
           </div>
           <div className=" flex justify-center sm:order-3 items-center gap-16 sm:flex-col mb-24">
             <Project
-              img={portfolio}
-              title="Portfolio app"
-              summary="A portfolio App using Nexjs, Tailwind CSS, zustand, and framer-motion.
-                give me your openion 
+              img={worker}
+              title="Worker Dashboard"
+              summary="This is a company dashboard web application built using Next.js 13, Tailwind CSS, and Next-Auth for authentication. The dashboard allows the company to manage and control various aspects of their system.
                            "
-              link="/"
-              type="My portfolio"
-              github="https://github.com/ahmedkhaledali1/portfolio"
+              link="https://worker-dashboard.vercel.app/auth/login"
+              type="Dashboard"
+              github="https://github.com/ahmedkhaledali1/worker"
             />
             <Project
               img={cart}
