@@ -130,7 +130,7 @@ local currency.
               title="Worker Dashboard"
               summary="This is a company dashboard web application built using Next.js 13, Tailwind CSS, and Next-Auth for authentication. The dashboard allows the company to manage and control various aspects of their system.
                            "
-              link="https://worker-dashboard.vercel.app/auth/login"
+              link="https://worker-web.vercel.app/"
               type="Dashboard"
               github="https://github.com/ahmedkhaledali1/worker"
             />

@@ -75,17 +75,16 @@ const about = () => {
                   reactjs and nextjs
                 </p>
               </div>
-              <div>
-                <p className="xl:font-bold md:text-xl">Education</p>
-                <p className="text-center md:text-xl font-serif text-xl">
-                  I&apos;m a student in computer engineering menufya-university
-                </p>
-              </div>
             </div>
           </div>
           <Skills />
           <div className="mt-44 mb-20 md:mt-32 sm:!mt-24"></div>
-          <Education />
+          <div>
+            <p className="xl:font-bold md:text-xl">Education</p>
+            <p className="text-center md:text-xl font-serif text-xl">
+              I&apos;m a student in computer engineering menufya-university
+            </p>
+          </div>
         </Layout>
       </main>
     </>
