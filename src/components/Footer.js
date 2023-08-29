@@ -9,7 +9,7 @@ const Footer = () => {
     dark:text-light dark:border-light border-dark 
      sm:text-base font-semibold"
     >
-      <Layout className="py-8 flex items-center text-lg justify-between lg:flex-col lg:py-6">
+      <Layout className="py-8 sm:!py-4 sm:!px-4 sm:!w-full flex items-center sm:gap-5 text-lg justify-between lg:flex-col lg:py-6">
         <span>
           {new Date().getFullYear()} &copy; with my best wishes{' '}
           <span className="text-blue-600 dark:text-red-600 text-2xl px-1">

@@ -4,29 +4,42 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import ecommerce from '../../public/images/projects/ecommerce-cover-image.jpg';
-import cart from '../../public/images/projects/cart.jpg';
-import twitter from '../../public/images/projects/twitter.jpg';
+import ecommerce from '../../public/images/projects/jordan.png';
+import cart from '../../public/images/projects/amazona.png';
+import twitter from '../../public/images/projects/twitter.png';
 import worker from '../../public/images/projects/worker.png';
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
     <article
-      className="w-full md:flex-col  flex items-center justify-between 
+      className="w-full md:flex-col h-full flex items-center justify-between 
     rounded-3xl border border-solid border-dark bg-light
-    shadow-2xl p-12 !md:p-2 md:px-1 2xl:p-8 dark:bg-dark dark:border-light"
+    shadow-2xl p-12  sm:!p-3 2xl:p-8 dark:bg-dark dark:border-light"
     >
       <Link
         href={link}
         target="_blank"
         className="w-1/2 md:w-full md:p-0 xl:p-0 cursor-pointer overflow-hidden  rounded-lg"
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <div
+          style={{
+            position: 'relative',
+            width: '100%',
+            height: '400px',
+            maxHeight: '400px',
+            cursor: 'pointer',
+          }}
+        >
+          <Image
+            src={img}
+            fill
+            sizes="(max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, 1280px"
+            className="object-cover"
+            alt="card photo"
+          />
+        </div>
       </Link>
-      <div className="w-1/2 md:w-full md:pl-0 flex flex-col items-start justify-between pl-6">
-        <span className="text-primary font-medium  dark:text-primaryDark">
-          {type}
-        </span>
+      <div className="w-1/2 md:w-full md:pl-0 flex flex-col items-start  pl-6">
         <Link
           className="hover:underline underline-offset-2"
           href={link}
@@ -57,19 +70,34 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 const Project = ({ type, title, summary, img, link, github }) => {
   return (
     <article
-      className="w-full flex flex-col  items-center justify-between 
+      className="w-full flex flex-col h-full items-center 
       rounded-3xl border border-solid border-dark bg-light 
-      shadow-2xl p-6 !md:p-2 relative mt-8 dark:bg-dark dark:border-light"
+      shadow-2xl p-6 sm:!p-3 relative mt-8 dark:bg-dark dark:border-light"
     >
       <Link
         href={link}
         target="_blank"
         className="w-full cursor-pointer overflow-hidden  rounded-lg"
       >
-        <Image src={img} alt={title} height="800px" className="w-full h-auto" />
+        <div
+          style={{
+            position: 'relative',
+            width: '100%',
+            height: '300px',
+            maxHeight: '350px',
+            cursor: 'pointer',
+          }}
+        >
+          <Image
+            src={img}
+            fill
+            sizes="(max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, 1280px"
+            className="object-cover"
+            alt="card photo"
+          />
+        </div>
       </Link>
-      <div className="w-full flex flex-col items-start justify-between p-2 mt4">
-        <span className="text-primary font-medium">{type}</span>
+      <div className="w-full flex flex-col items-start  p-2 ">
         <Link
           className="hover:underline underline-offset-2"
           href={link}
@@ -79,7 +107,9 @@ const Project = ({ type, title, summary, img, link, github }) => {
             {title}
           </h2>
         </Link>
-        <p className="text-dark dark:text-light">{summary}</p>
+        <p className="text-dark dark:text-light h-[110px] overflow-hidden">
+          {summary}
+        </p>
         <div className="mt-9 flex items-center justify-center dark:text-light">
           <Link className="w-10 " href={github} target="_blank">
             <GithubIcon />
@@ -105,26 +135,22 @@ const projects = () => {
         <meta name="desription" content="A fonrt end developer" />
       </Head>
       <main className=" w-full  mb-16 flex  flex-col items-center justify-center">
-        <div className="p-32 sm:p-8">
+        <div className="p-32 sm:p-8 sm:!px-1">
           <AnimatedText
             className="text-8xl  md:text-6xl md:mb-14 !text-center mx-auto w-auto !mb-20 dark:text-light"
             text="Imagination Trumps Knowldge!"
           />
-          <div className="mb-24 sm:order-2">
+          <div className="mb-24 h-[450px] sm:h-fit">
             <FeaturedProject
               img={ecommerce}
-              title="E-commerce Application"
-              summary="A E-commerce Application with paying by Paypal, you can add the prodution what you in the dashboard ,you can show your history of dealing and every thing is saving in database .
-                I used Nextjs, Javescript, Tailwind CSS, Redux toolkit, NextAuth for authentication, JWT for protecting the data of users and MongoDB for database. 
-. You can easily convert the price in your 
-local currency.
-                "
-              link="https://e-commerce-eosin-tau.vercel.app/"
-              type="big Project"
-              github="https://github.com/ahmedkhaledali1/e-commerce"
+              title="jordan starts here"
+              summary="This is a tourism project for the State of Jordan in a way that you can identify and reach all the places you want in Jordan through Google Maps, and you can search for hotels and tourist places by
+              The name, region, rating, or price, and you can also know the latest news, concerts, and articles, and it contains 5 languages"
+              link="https://jordanstartshere.com/en/home"
+              github="https://jordanstartshere.com/en/home"
             />
           </div>
-          <div className=" flex justify-center sm:order-3 items-center gap-16 sm:flex-col mb-24">
+          <div className=" flex justify-center h-[650px] sm:h-fit sm:flex-col  items-center gap-16  mb-24">
             <Project
               img={worker}
               title="Worker Dashboard"
@@ -135,18 +161,6 @@ local currency.
               github="https://github.com/ahmedkhaledali1/worker"
             />
             <Project
-              img={cart}
-              title="Cart Application"
-              summary="A Practice project using React, Tailwind CSS, Context API and  React Router. 
-                      it's a cart app for resturant
-                           "
-              link="https://cart-app-ten.vercel.app/"
-              type="Practice project"
-              github="https://github.com/ahmedkhaledali1/cart-app"
-            />
-          </div>
-          <div className="sm:order-1">
-            <FeaturedProject
               img={twitter}
               title="full stack social media app"
               summary=" a Twitter clone with React, typescript, Tailwind CSS, Next.JS, zustand, Prisma and MongoDB
@@ -164,6 +178,16 @@ local currency.
               link="https://twitter-dun-pi.vercel.app/"
               type="big Project"
               github="https://github.com/ahmedkhaledali1/twitter"
+            />
+          </div>
+          <div className=" h-[450px] sm:h-fit">
+            <FeaturedProject
+              img={cart}
+              title="E-commerce Application"
+              summary="a feature-rich Amazon clone using Next.js 13.4.8. Learn how to seamlessly integrate Stripe payment, implement AuthJS login, leverage Tailwind CSS for stunning designs, and harness the power of Redux for state management"
+              link="https://amazona-blue.vercel.app/"
+              type="Practice project"
+              github="https://github.com/ahmedkhaledali1/amazona"
             />
           </div>
         </div>

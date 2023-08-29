@@ -18,6 +18,55 @@ const Skill = ({ name, x, y }) => {
     </motion.div>
   );
 };
+const SmSkill = ({ name, x, y }) => {
+  return (
+    <div
+      className="flex items-center justify-center md:text-sm m-2 cursor-pointer 
+      rounded-full font-medium  bg-dark text-light
+        py-3 px-6 shadow-dark w-auto
+        lg:py-2 lg:px-4 sm:!text-sm sm!:p-0 
+        "
+    >
+      {name}
+    </div>
+  );
+};
+export const NewSkills = () => {
+  return (
+    <div className="w-full flex flex-col justify-center items-center">
+      <h2 className="font-bold  text-8xl  mt-56 sm:mt-20  md:mt-32 mb-6 w-full text-center">
+        Skills
+      </h2>
+      <div className="w-full flex flex-col justify-center">
+        <div>
+          <SmSkill name="HTML" />
+          <SmSkill name="CSS" />
+        </div>
+        <div>
+          <SmSkill name="Javascipt" />
+          <SmSkill name="Typescript" />
+        </div>
+
+        <div>
+          <SmSkill name="Reactjs" />
+          <SmSkill name="Nextjs" />
+        </div>
+        <div>
+          <SmSkill name="Redux" />
+          <SmSkill name="Zustand" />
+        </div>
+        <div>
+          <SmSkill name="Git" />
+          <SmSkill name="Github" />
+        </div>
+        <div>
+          <SmSkill name="FireBase" />
+          <SmSkill name="MongoDB" />
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const Skills = () => {
   return (
