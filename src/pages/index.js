@@ -5,7 +5,6 @@ import profilePic from '../../public/images/profile/IMG_20230215_032956_499.jpg'
 import AnimatedText from '@/components/AnimatedText';
 import Link from 'next/link';
 import { LinkArrow } from '@/components/Icons';
-import HireMe from '@/components/HireMe';
 import lightBuld from '../../public/images/svgs/miscellaneous_icons_1.svg';
 export default function Home() {
   return (
