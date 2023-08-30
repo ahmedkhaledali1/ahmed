@@ -135,9 +135,9 @@ const projects = () => {
         <meta name="desription" content="A fonrt end developer" />
       </Head>
       <main className=" w-full  mb-16 flex  flex-col items-center justify-center">
-        <div className="p-32 sm:p-8 sm:!px-1">
+        <div className="p-32 sm:p-2 sm:!px-1">
           <AnimatedText
-            className="text-8xl sm:!text-4  md:text-6xl md:mb-14 !text-center mx-auto w-auto !mb-20 dark:text-light"
+            className="text-8xl sm:!text-4xl  md:text-6xl md:mb-14 !text-center mx-auto w-auto !mb-20 dark:text-light"
             text="Imagination Trumps Knowldge!"
           />
           <div className="mb-24 h-[450px] sm:h-fit">
