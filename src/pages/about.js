@@ -120,7 +120,7 @@ const about = () => {
               </div>
               <div className="text-xl text-gray-500 dark:text-gray-200 flex gap-3">
                 <HiOutlineLocationMarker size={30} />
-                <p>FreeLaner </p>
+                <p>FreeLancer </p>
               </div>
             </div>
             <div className="w-[90%] sm:w-full  flex flex-col mt-20 gap-6">
