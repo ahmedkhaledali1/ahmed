@@ -36,8 +36,8 @@ export default function Home() {
               <p className="my-4 text-base sm:text-start font-medium">
                 As a Junior Front-end Developer with one year of experience, I
                 have successfully implemented projects using Reactjs. I
-                specialize in Nextjs and excel at creating responsive designs
-                and delivering real projects.
+                specialize in Nextjs and Tailwindcss at creating responsive
+                designs and delivering real projects.
               </p>
               <div className="flex items-center justify-center  lg:gap-6">
                 <Link
